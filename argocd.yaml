@@ -13,7 +13,7 @@ spec:
     namespace: app-of-apps
   syncPolicy:
     automated:
-      prune: true
+
       selfHeal: true
     syncOptions:
       - Createnamespace=true
