@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps
-  namespace: argo
+  namespace: default
 spec:
   project: default
   source:
@@ -11,7 +11,7 @@ spec:
     targetRevision: ketto
   destination:
     server: https://kubernetes.default.svc
-    namespace: ketto
+    namespace: default
   syncPolicy:
     automated:
       prune: true
