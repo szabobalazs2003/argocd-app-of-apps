@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps
+  namespace: argo
 spec:
   project: default
   source:
@@ -13,7 +14,7 @@ spec:
     namespace: app-of-apps
   syncPolicy:
     automated:
-
+      prune: true
       selfHeal: true
     syncOptions:
       - Createnamespace=true
