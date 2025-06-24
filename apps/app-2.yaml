@@ -11,7 +11,7 @@ spec:
     targetRevision: ketto
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: ketto
   syncPolicy:
     automated:
       prune: true
