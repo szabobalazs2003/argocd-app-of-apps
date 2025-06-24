@@ -11,9 +11,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: app-of-apps
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
-  #   syncOptions:
-  #     - Createnamespace=true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Createnamespace=true
