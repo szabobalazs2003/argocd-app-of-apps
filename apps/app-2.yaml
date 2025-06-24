@@ -1,0 +1,10 @@
+project: default
+source:
+  repoURL: https://github.com/szabobalazs2003/argocd-test
+  path: k8s
+  targetRevision: ketto
+destination:
+  server: https://kubernetes.default.svc
+  namespace: default
+syncPolicy:
+  automated: {}
