@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/szabobalazs2003/argocd-test
     path: k8s
-    targetRevision: istoi
+    targetRevision: istio
   destination:
     server: https://kubernetes.default.svc
     namespace: app2
