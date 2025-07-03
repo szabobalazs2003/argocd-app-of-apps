@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: istio-base
+  name: istio
   namespace: argo
 spec:
   project: default
   source:
     repoURL: https://istio-release.storage.googleapis.com/charts
-    chart: istio-base
+    chart: istio
     targetRevision: 1.26.2
     helm:
-      releaseName: istio-base
+      releaseName: istio
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-system
