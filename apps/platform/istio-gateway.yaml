@@ -15,7 +15,7 @@ spec:
       releaseName: istio-gateway
       values: |
         service:
-          type: NodePort
+          type: LoadBalancer
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-system
