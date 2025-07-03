@@ -3,11 +3,13 @@ kind: Application
 metadata:
   name: istiod
   namespace: argo
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   project: default
   source:
     repoURL: https://istio-release.storage.googleapis.com/charts
-    chart: istio/istiod
+    chart: istiod
     targetRevision: 1.26.2
     helm:
       releaseName: istiod
