@@ -27,7 +27,7 @@ spec:
                 - name: zipkin
                   port: 9411
                   protocol: TCP
-                  targetPort: zipkin
+                  targetPort: 9411
         agent:
           enabled: true
         query:
