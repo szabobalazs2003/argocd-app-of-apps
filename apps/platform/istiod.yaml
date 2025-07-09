@@ -13,6 +13,13 @@ spec:
     targetRevision: 1.26.2
     helm:
       releaseName: istiod
+      values: |
+        meshConfig:
+          defaultConfig:
+            tracing:
+              sampling: 100.0
+              zipkin:
+                address: jaeger-collector.observability.svc.cluster.local:9411
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-system
