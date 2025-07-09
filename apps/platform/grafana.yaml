@@ -14,13 +14,12 @@ spec:
     helm:
       releaseName: grafana
       values: |
-        grafana:
-          auth:
-            disableLoginForm: true
-            disableSignoutMenu: true
-            anonymous:
-              enabled: true
-              org_role: Admin
+        auth:
+          disableLoginForm: true
+          disableSignoutMenu: true
+          anonymous:
+            enabled: true
+            org_role: Admin
         datasources:
           datasources.yaml:
             apiVersion: 1
