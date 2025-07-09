@@ -19,7 +19,7 @@ spec:
             tracing:
               sampling: 100.0
               zipkin:
-                address: jaeger-collector.observability.svc.cluster.local:9411
+                address: jaeger-collector.observability.svc.cluster.local:14268
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-system
