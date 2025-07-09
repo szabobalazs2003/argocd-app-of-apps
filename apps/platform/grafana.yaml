@@ -30,7 +30,6 @@ spec:
                 access: proxy
                 url: http://prometheus-server.prometheus-system.svc.cluster.local
                 isDefault: true
-
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring
