@@ -21,6 +21,12 @@ spec:
           kafka: false
         collector:
           enabled: true
+          service:
+            ports:
+              - name: zipkin
+                port: 9411
+                protocol: TCP
+                targetPort: zipkin
         agent:
           enabled: true
         query:
