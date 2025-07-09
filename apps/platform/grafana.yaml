@@ -16,8 +16,8 @@ spec:
       values: |
         grafana:
           auth:
-           disableLoginForm: true
-           disableSignoutMenu: true
+            disableLoginForm: true
+            disableSignoutMenu: true
             anonymous:
               enabled: true
               org_role: Admin
